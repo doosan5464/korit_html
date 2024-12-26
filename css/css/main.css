@@ -1,0 +1,97 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 44px;
+}
+
+.main-layout {
+    margin-top: 12px;
+    width: 350px;
+}
+
+.main-border {
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    padding: 10px 0;
+
+    & > header {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+
+        & > i {
+            margin: 36px 0 12px;
+        }
+    }
+}
+
+.main-item-container-1 {
+    margin: 0 40px 10px;
+    color: #737373;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-item-container-2 {
+    margin: 8px 40px;
+}
+
+.main-item-container-3 {
+    margin: 10px 40px 18px;
+    display: flex;
+    align-items: center;
+
+    & > .side-line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: #dbdbdb;
+    }
+
+    & > .or-text {
+        margin: 0 18px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #737373;
+    }
+}
+
+
+.button-blue {
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0095fE;
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover {
+        background-color: #1877f2;
+    }
+
+    &:disabled {
+        background-color: rgb(0, 149, 246);
+    }
+}
+
+.facebook-icon {
+    display: block;
+    background-image: url(https://static.cdninstagram.com/rsrc.php/v4/y5/r/TJztmXpWTmS.png);
+    background-repeat: no-repeat;
+    background-position: -414px -300px;
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+
+}
+
+.main-botton {
+
+}
