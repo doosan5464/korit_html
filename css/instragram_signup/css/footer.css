@@ -1,5 +1,11 @@
+footer {
+    margin-bottom: 52px;
+}
+
 .footer-container {
+    margin-top: 24px;
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 
