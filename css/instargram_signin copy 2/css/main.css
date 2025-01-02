@@ -12,11 +12,6 @@
     height: 750px;
 }
 
-.test {
-    width: 100%;
-    padding-bottom: 10px;
-}
-
 .main-flex-border {
     display: flex;
     flex-direction: column;
@@ -46,9 +41,6 @@
     /*생략하면 콘텐츠 중 제일 긴걸로 최대치를 잡아서
     이렇게 컨텐츠를 100%로 하면 테두리까지 채운다*/
 }
-
-
-
 
 .main-item-info {
     margin: 0 40px 6px;
