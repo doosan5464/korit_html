@@ -3,10 +3,11 @@ let boardInputDatas = {
     title: "",
     content: "",
     writer: "",
+    password: "",
 };
 
 function setInputsEvent() {
-    const titleInput = document.querySelector(".wirte-title");
+    const titleInput = document.querySelector(".write-title");
     const contentInput = document.querySelector(".write-content");
     const writerInput = document.querySelector(".write-writer");
     
@@ -15,13 +16,11 @@ function setInputsEvent() {
     writerInput.onkeyup = handleBoardInputOnChange;
 }
 
-// 밑에껄로 하다가 강사님꺼 추가
 function setButtonEvent() {
     const submitButton = document.querySelector(".write-submit-button");
     submitButton.onclick = handleSubmitOnClick;
 }
 
-// 밑에껄로 하다가 강사님꺼 추가
 function handleSubmitOnClick() {
     saveBoard();
     clear();
@@ -30,13 +29,13 @@ function handleSubmitOnClick() {
 function saveBoard() {
     let boardDatas = !!localStorage.getItem("boardDatas") 
     ? JSON.parse(localStorage.getItem("boardDatas"))
-    : []; // null이면 빈 배열로 만들어줌
+    : []; 
 
     if(boardDatas.length > 0) {
         boardInputDatas.id = boardDatas[boardDatas.length - 1].id + 1;
     }
 
-    boardDatas = [ // 빈 배열이라도 여기서 추가가 됨
+    boardDatas = [ 
         ...boardDatas,
         boardInputDatas,
     ]
@@ -47,7 +46,7 @@ function saveBoard() {
 }
 
 function clear() {
-    const titleInput = document.querySelector(".wirte-title");
+    const titleInput = document.querySelector(".write-title");
     const contentInput = document.querySelector(".write-content");
     const writerInput = document.querySelector(".write-writer");
     const inputs = [titleInput, contentInput, writerInput];

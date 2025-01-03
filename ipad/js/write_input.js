@@ -8,7 +8,7 @@ function loadList() {
     boardList.innerHTML = boardDatas.map(data => `
         <li class="board-box">
             <header class="board-header">
-                <h1>글 제목${data.title} (작성자 : ${data.writer})</h1>
+                <h1>${data.title} (작성자 : ${data.writer})</h1>
             </header>
             <main class="board-main">
                 <textarea>${data.content}</textarea> 
