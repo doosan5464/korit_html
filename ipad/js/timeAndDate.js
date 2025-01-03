@@ -16,8 +16,8 @@ function clockRun() {
         const month = now.getMonth() + 1;
         const date = now.getDate();
         const dayOfWeekNumber = now.getDay(); 
-        const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
-        const dayOfWeekText = daysOfWeek[dayOfWeekNumber];
+        const week = ["일", "월", "화", "수", "목", "금", "토"];
+        const dayOfWeekText = week[dayOfWeekNumber];
         phoneDate.innerHTML = `${month}월 ${date}일 ${dayOfWeekText}요일`;
     }, 1000);
 }
